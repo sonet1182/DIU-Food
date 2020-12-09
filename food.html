@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Food</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="food.css">
+
+	<script>
+		var x;
+		var total=0;
+		function calc(x) {
+			total=x+total;
+			form.display.value=total;
+		}
+
+	</script>
+
+
+</head>
+
+<body>
+	<section class="container-fluid image">
+		<div class="cont">
+			<h1>DIU FOOD GARDEN</h1>
+			<p style="text-align: center;">Order Food from hostel and get <b>free</b> room delevery</p>
+			<form class="form_code" name="form">
+				<input class="post_code" type="text" placeholder="Total Price" name="display" style="text-align: center;">
+				<a href="#info"><button type="submit">Confirm</button></a>
+			</form>
+		</div>
+	</section>
+	
+	
+	<section class="container my-2 ">
+
+		<h1 style="text-align: center; margin-bottom: 10px;"><i>Choice Your Dine</i></h1>
+
+		<div class="row">
+			
+		<div class="card col-lg-4 col-md-6 col-12" style="width:400px">
+			<img class="card-img-bottom" src="rice.jpg" alt="Card image" style="width:100%">
+	    <div class="card-body">
+	      <h4 class="card-title">Rice</h4>
+	      <p class="card-text">Fress 250 grum hot white rice.<br>Price Only 10tk for 1 full plate</p>
+	      <input type="button" class="btn btn-primary" value="Buy" onclick="calc(10)">
+	      <input type="button" class="btn btn-danger" value="Cancel" onclick="calc(-10)">
+	    </div>
+	  </div>
+
+	  <div class="card col-lg-4 col-md-6 col-12" style="width:400px">
+			<img class="card-img-bottom" src="chicken.jpg" alt="Card image" style="width:100%">
+	    <div class="card-body">
+	      <h4 class="card-title">Chicken</h4>
+	      <p class="card-text">Fress 250 grum broiler chicken.<br>Price Only 50tk for 1/6 quantity.</p>
+	      <input type="button" class="btn btn-primary" value="Buy" onclick="calc(50)">
+	      <input type="button" class="btn btn-danger" value="Cancel" onclick="calc(-50)">
+	    </div>
+	  </div>
+
+	  <div class="card col-lg-4 col-md-6 col-12" style="width:400px">
+			<img class="card-img-bottom" src="fish.jpg" alt="Card image" style="width:100%">
+	    <div class="card-body">
+	      <h4 class="card-title">Fish</h4>
+	      <p class="card-text">Fress 200 grum Rhoi fish.<br>Price Only 40tk for 1/6 ratio of a fish</p>
+	       <input type="button" class="btn btn-primary" value="Buy" onclick="calc(40)">
+	      <input type="button" class="btn btn-danger" value="Cancel" onclick="calc(-40)">
+	    </div>
+	  </div>
+
+
+
+	  <div class="card col-lg-4 col-md-6 col-12" style="width:400px">
+			<img class="card-img-bottom" src="biriani.jpg" alt="Card image" style="width:100%">
+	    <div class="card-body">
+	      <h4 class="card-title">Biriani</h4>
+	      <p class="card-text">Special 300 grum Hayedrabadi biriani.<br>Price Only 120tk for 1/2 plate  of biriani</p>
+	      <input type="button" class="btn btn-primary" value="Buy" onclick="calc(120)">
+	      <input type="button" class="btn btn-danger" value="Cancel" onclick="calc(-120)">
+	    </div>
+	  </div>
+
+
+	  <div class="card col-lg-4 col-md-6 col-12" style="width:400px">
+			<img class="card-img-bottom" src="tehari.jpg" alt="Card image" style="width:100%">
+	    <div class="card-body">
+	      <h4 class="card-title">Tehari</h4>
+	      <p class="card-text">Special 300 grum Mutton Tehari.<br>Price Only 80tk for 1/2 plate  of Tehari</p>
+	      <input type="button" class="btn btn-primary" value="Buy" onclick="calc(80)">
+	      <input type="button" class="btn btn-danger" value="Cancel" onclick="calc(-80)">
+	    </div>
+	  </div>
+
+	  <div class="card col-lg-4 col-md-6 col-12" style="width:400px">
+			<img class="card-img-bottom" src="beef.jpg" alt="Card image" style="width:100%">
+	    <div class="card-body">
+	      <h4 class="card-title">Beef</h4>
+	      <p class="card-text">Special 150 grum Mezbani Beef.<br>Price Only 100tk for 1 bowl  of Beef</p>
+	      <input type="button" class="btn btn-primary" value="Buy" onclick="calc(100)">
+	      <input type="button" class="btn btn-danger" value="Cancel" onclick="calc(-100)">
+	    </div>
+	  </div>
+
+	  </div>
+	</section>
+
+
+	<!---------------------Info------------------->
+
+	<section id="info" class="container-fluid my-15 py-5">
+		<h1 style="text-align: center;">Give Information</h1>
+		<form action="/action_page.php">
+			  <div class="form-group">
+			    <label for="email">ID:</label>
+			    <input type="email" class="form-control" placeholder="Enter DIU Id" id="email">
+			  </div>
+			  <div class="form-group">
+			    <label for="pwd">Password:</label>
+			    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+			  </div>
+			  <div class="form-group form-check">
+			    <label class="form-check-label">
+			      <input class="form-check-input" type="checkbox"> Confirm
+			    </label>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+		<div class="container text-center">
+			<p>Made with HTML,CSS,Bootstrap and JavaScript <i style="color: red;" class="fa fa-heart-o"></i> By SONET </p>
+		</div>
+	</section>
+
+
+
+
+</body>
